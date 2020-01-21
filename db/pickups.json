@@ -1,0 +1,23 @@
+{
+  "pickup1": {
+    "name": "Emilee Mitchell",
+    "address": "301 Plus Park Boulevard",
+    "boxNumber": "6",
+    "pickupDay": "Tuesday",
+    "uid": "TBD"
+  },
+  "pickup2": {
+    "name": "Emilee Mitchell",
+    "address": "301 Plus Park Boulevard",
+    "boxNumber": "12",
+    "pickupDay": "Tuesday",
+    "uid": "TBD"
+  },
+  "pickup3": {
+    "name": "Emilee Mitchell",
+    "address": "301 Plus Park Boulevard",
+    "boxNumber": "4",
+    "pickupDay": "Tuesday",
+    "uid": "TBD"
+  }
+}
