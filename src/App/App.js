@@ -4,7 +4,7 @@ import 'firebase/auth';
 
 import NavBar from '../components/shared/NavBar/NavBar';
 import firebaseConnection from '../helpers/data/connection';
-// import Home from '../components/pages/Home/Home';
+import Home from '../components/pages/Home/Home';
 import Auth from '../components/pages/Auth/Auth';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -36,9 +36,10 @@ class App extends React.Component {
     return (
     <div className="App">
       <NavBar authed={authed} />
-      <Auth authed={authed} />
+    { authed === true ? (<Home />) : (<Auth authed={authed} />) }
       </div>
     );
   }
 }
+
 export default App;
