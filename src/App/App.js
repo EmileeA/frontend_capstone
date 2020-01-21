@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+  BrowserRouter as Router, Route, Redirect, Switch,
+} from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 
@@ -8,6 +11,16 @@ import Home from '../components/pages/Home/Home';
 import Auth from '../components/pages/Auth/Auth';
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+const PublicRoute = ({ component: Component, authed, ...rest }) => {
+  const routeChecker = (props) => (authed === false ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/', state: { from: props.location } }} />);
+  return <Route {...rest} render={(props) => routeChecker(props)} />;
+};
+
+const PrivateRoute = ({ component: Component, authed, ...rest }) => {
+  const routeChecker = (props) => (authed === true ? <Component {...props} {...rest}/> : <Redirect to={{ pathname: '/auth', state: { from: props.location } }} />);
+  return <Route {...rest} render={(props) => routeChecker(props)} />;
+};
 
 firebaseConnection();
 
@@ -35,8 +48,15 @@ class App extends React.Component {
 
     return (
     <div className="App">
-      <NavBar authed={authed} />
-    { authed === true ? (<Home />) : (<Auth authed={authed} />) }
+      {/* <NavBar authed={authed} />
+    { authed === true ? (<Home />) : (<Auth authed={authed} />) } */}
+      <Router>
+        <NavBar authed={authed}/>
+        <Switch>
+          <PrivateRoute path="/" exact component={Home} authed={authed}/>
+          <PublicRoute path="/auth" exact component={Auth} authed={authed} />
+        </Switch>
+      </Router>
       </div>
     );
   }
