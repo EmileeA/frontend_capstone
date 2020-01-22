@@ -2,13 +2,12 @@ import React from 'react';
 import './Stuff.scss';
 import { Link } from 'react-router-dom';
 
-// import pickupShape from '../../../helpers/propz/pickupShape';
+import pickupShape from '../../../helpers/propz/pickupShape';
 
 class Stuff extends React.Component {
-  // static propTypes = {
-  // pickup: pickupShape.pickupShape
-  // }
-
+  static propTypes = {
+    pickup: pickupShape.pickupShape,
+  }
 
   render() {
     const { pickup } = this.props;

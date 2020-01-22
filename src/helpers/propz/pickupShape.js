@@ -10,4 +10,4 @@ const pickupShape = PropTypes.shape({
   uid: PropTypes.string,
 });
 
-export default pickupShape;
+export default { pickupShape };
