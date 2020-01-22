@@ -12,6 +12,19 @@ class PickupForm extends React.Component {
     pickupDay: '',
   }
 
+  componentDidMount() {
+    const { pickupId } = this.props.match.params;
+    if (pickupId) {
+      pickupData.getSinglePickup(pickupId)
+        .then((response) => {
+          this.setState({
+            name: response.data.name, address: response.data.address, boxNumber: response.data.boxNumber, pickupDay: response.data.pickupDay,
+          });
+        })
+        .catch((error) => console.error('error from component did mount', error));
+    }
+  }
+
 nameChange = (e) => {
   e.preventDefault();
   this.setState({ name: e.target.value });
@@ -46,10 +59,26 @@ savePickupEvent = (e) => {
     .catch((error) => console.error('err from save pickup event', error));
 }
 
+saveChangesEvent = (e) => {
+  e.preventDefault();
+  const { pickupId } = this.props.match.params;
+  const updatedPickup = {
+    name: this.state.name,
+    address: this.state.address,
+    boxNumber: this.state.boxNumber,
+    pickupDay: this.state.pickupDay,
+    uid: authData.getUid(),
+  };
+  pickupData.updatePickup(pickupId, updatedPickup)
+    .then(() => this.props.history.push('/pickups'))
+    .catch((error) => console.error('error from save item event', error));
+}
+
 render() {
   const {
     name, address, boxNumber, pickupDay,
   } = this.state;
+  const { pickupId } = this.props.match.params;
 
   return (
     <div className="PickupForm">
@@ -96,7 +125,11 @@ render() {
           >
           </input>
       </div>
-      <button className="btn btn-dark" onClick={this.savePickupEvent}>Save Pickup</button>
+      {
+          pickupId
+            ? (<button className="btn btn-dark" onClick={this.saveChangesEvent}>Save Changes</button>)
+            : (<button className="btn btn-dark" onClick={this.savePickupEvent}>Save Pickup</button>)
+        }
     </form>
     </div>
   );

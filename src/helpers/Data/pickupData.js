@@ -26,8 +26,11 @@ const getSinglePickup = (pickupId) => axios.get(`${baseUrl}/pickups/${pickupId}.
 
 const savePickup = (pickupInfo) => axios.post(`${baseUrl}/pickups.json`, pickupInfo);
 
+const updatePickup = (pickupId, newPickupInfo) => axios.put(`${baseUrl}/pickups/${pickupId}.json`, newPickupInfo);
+
 export default {
   getPickupsByUid,
   getSinglePickup,
   savePickup,
+  updatePickup,
 };
