@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
 import 'firebase/auth';
@@ -21,19 +22,19 @@ class NavBar extends React.Component {
     return (
       <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/">Features |</a>
+              <Link className="nav-link" to="#features">Features</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/"> Recycling Tips |</a>
+              <Link className="nav-link" to="#recycling">Recycling Tips</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/"> Testimonials |</a>
+              <Link className="nav-link" to="#testimonials">Testimonials</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/"> Schedule a Pickup |</a>
+              <Link className="nav-link" to="/schedule">Schedule a Pickup</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/"> My Account |</a>
+              <Link className="nav-link" to="/myaccount">My Account</Link>
             </li>
             <li className="nav-item">
               <button className="nav-link btn btn-light" onClick={this.logMeOut}>Log Out</button>
@@ -47,7 +48,7 @@ class NavBar extends React.Component {
     return (
       <div className="NavBar">
         <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
-          <a className="navbar-brand Home" href="/">Reebox</a>
+          <Link className="navbar-brand Home" to="/">Reebox</Link>
          <button className="navbar-toggler" type="button" data-toggle="collapse"
          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

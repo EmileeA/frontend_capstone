@@ -9,6 +9,10 @@ import NavBar from '../components/shared/NavBar/NavBar';
 import firebaseConnection from '../helpers/data/connection';
 import Home from '../components/pages/Home/Home';
 import Auth from '../components/pages/Auth/Auth';
+import MyPickups from '../components/pages/MyPickups/MyPickups';
+import SinglePickup from '../components/pages/SinglePickup/SinglePickup';
+
+
 import './App.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -55,6 +59,9 @@ class App extends React.Component {
         <Switch>
           <PrivateRoute path="/" exact component={Home} authed={authed}/>
           <PublicRoute path="/auth" exact component={Auth} authed={authed} />
+          <PrivateRoute path="/myaccount" exact component={MyPickups} authed={authed} />
+          <PrivateRoute path="/myaccount/:pickupId" exact component={SinglePickup} authed={authed} />
+          <PrivateRoute path="/myaccount/:pickupId/edit" exact component={SinglePickup} authed={authed} />
         </Switch>
       </Router>
       </div>

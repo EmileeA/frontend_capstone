@@ -3,3 +3,12 @@
 .NavBar {
   display: block;
 }
+
+
+.nav-link {
+  border-right: .5px groove black;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 5px;
+  line-height: .5em;
+}
