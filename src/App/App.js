@@ -61,7 +61,7 @@ class App extends React.Component {
           <PublicRoute path="/auth" exact component={Auth} authed={authed} />
           <PrivateRoute path="/myaccount" exact component={MyPickups} authed={authed} />
           <PrivateRoute path="/myaccount/:pickupId" exact component={SinglePickup} authed={authed} />
-          <PrivateRoute path="/myaccount/:pickupId/edit" exact component={SinglePickup} authed={authed} />
+          <PrivateRoute path="/myaccount/:pickupId/:edit" exact component={SinglePickup} authed={authed} />
         </Switch>
       </Router>
       </div>
