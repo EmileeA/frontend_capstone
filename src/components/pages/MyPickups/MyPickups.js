@@ -27,11 +27,12 @@ class MyPickups extends React.Component {
     return (
       <div className="MyPickups">
         <h1>My Account</h1>
-        {/* <Link className="btn btn-primary" to={`/myaccount/${pickupId}`}>View</Link>
-        <Link className="btn btn-secondary" to={`/myaccount/${pickupId}/edit`}>Edit</Link> */}
         <div className="stuff container d-flex flex-wrap">
           {this.state.stuff.map((pickup) => <Stuff key={pickup.id} pickup={pickup} />)}
         </div>
+      <div>
+        <button className="btn btn-dark schedule">Schedule a Pickup</button>
+      </div>
       </div>
     );
   }

@@ -24,4 +24,10 @@ const getPickupsByUid = (uid) => new Promise((resolve, reject) => {
 
 const getSinglePickup = (pickupId) => axios.get(`${baseUrl}/pickups/${pickupId}.json`);
 
-export default { getPickupsByUid, getSinglePickup };
+const savePickup = (pickupInfo) => axios.post(`${baseUrl}/pickups.json`, pickupInfo);
+
+export default {
+  getPickupsByUid,
+  getSinglePickup,
+  savePickup,
+};
