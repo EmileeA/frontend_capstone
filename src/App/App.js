@@ -9,6 +9,7 @@ import NavBar from '../components/shared/NavBar/NavBar';
 import firebaseConnection from '../helpers/data/connection';
 import Home from '../components/pages/Home/Home';
 import Auth from '../components/pages/Auth/Auth';
+import PickupForm from '../components/pages/PickupForm/PickupForm';
 import MyPickups from '../components/pages/MyPickups/MyPickups';
 import SinglePickup from '../components/pages/SinglePickup/SinglePickup';
 
@@ -59,6 +60,7 @@ class App extends React.Component {
         <Switch>
           <PrivateRoute path="/" exact component={Home} authed={authed}/>
           <PublicRoute path="/auth" exact component={Auth} authed={authed} />
+          <PrivateRoute path="/schedule" exact component={PickupForm} authed={authed} />
           <PrivateRoute path="/myaccount" exact component={MyPickups} authed={authed} />
           <PrivateRoute path="/myaccount/:pickupId" exact component={SinglePickup} authed={authed} />
           <PrivateRoute path="/myaccount/:pickupId/:edit" exact component={SinglePickup} authed={authed} />
