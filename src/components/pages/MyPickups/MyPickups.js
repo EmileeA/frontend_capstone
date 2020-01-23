@@ -13,6 +13,12 @@ class MyPickups extends React.Component {
     stuff: [],
   }
 
+  deletePickup = (pickupId) => {
+    pickupData.deletePickup(pickupId)
+      .then(() => this.getStuff())
+      .catch((error) => console.error('error from deletePickup', error));
+  }
+
   getStuff = () => {
     pickupData.getPickupsByUid(authData.getUid())
       .then((stuff) => this.setState({ stuff }))
@@ -28,7 +34,7 @@ class MyPickups extends React.Component {
       <div className="MyPickups">
         <h1>My Account</h1>
         <div className="stuff container d-flex flex-wrap">
-          {this.state.stuff.map((pickup) => <Stuff key={pickup.id} pickup={pickup} />)}
+          {this.state.stuff.map((pickup) => <Stuff key={pickup.id} deletePickup={this.deletePickup} pickup={pickup} />)}
         </div>
       <div>
       <Link to="/scheduleapickup">
