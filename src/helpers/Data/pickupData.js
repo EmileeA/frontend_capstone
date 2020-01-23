@@ -28,9 +28,12 @@ const savePickup = (pickupInfo) => axios.post(`${baseUrl}/pickups.json`, pickupI
 
 const updatePickup = (pickupId, newPickupInfo) => axios.put(`${baseUrl}/pickups/${pickupId}.json`, newPickupInfo);
 
+const deletePickup = (pickupId) => axios.delete(`${baseUrl}/pickups/${pickupId}.json`);
+
 export default {
   getPickupsByUid,
   getSinglePickup,
   savePickup,
   updatePickup,
+  deletePickup,
 };
