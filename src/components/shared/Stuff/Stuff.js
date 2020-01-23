@@ -20,7 +20,8 @@ class Stuff extends React.Component {
             <img className="card-img" src={pickup.image} alt={pickup.address} />
           </div>
           <div className="card-footer">
-            <Link className="btn btn-dark" to={`/myaccount/${pickup.id}`}>View</Link>
+            <Link className="btn btn-dark m-2" to={`/myaccount/${pickup.id}`}>View</Link>
+            <Link className="btn btn-dark m-2" to={`/myaccount/${pickup.id}/edit`}>Edit</Link>
           </div>
         </div>
       </div>

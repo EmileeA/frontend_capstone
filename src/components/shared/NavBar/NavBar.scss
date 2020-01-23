@@ -9,6 +9,11 @@
   border-right: .5px groove black;
   margin-right: 5px;
   margin-left: 5px;
-  margin-top: 5px;
+  margin-top: 0;
   line-height: .5em;
+}
+
+#tacoBell {
+  line-height: 0!important;
+  margin-top: 2px;
 }

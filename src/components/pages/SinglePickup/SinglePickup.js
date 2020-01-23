@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import pickupData from '../../../helpers/data/pickupData';
 
 import './SinglePickup.scss';
@@ -20,11 +21,13 @@ class SinglePickup extends React.Component {
 
   render() {
     const { pickup } = this.state;
+    const { pickupId } = this.props.match.params;
     return (
-    //   <div className="SinglePickup">
-    // { edit === 'edit' ? (<h1>Edit</h1>) : (<h1>Single Pickup</h1>) }
-    <div className="SinglePickup container">
+     <div className="SinglePickup container">
         <h1>{pickup.name}</h1>
+        <div className="d-flex justify-content-center">
+        <Link className="btn btn-dark m-2" to={`/stuff/${pickupId}/edit`}>Edit</Link>
+        </div>
         <img className="w-50" src={pickup.image} alt={pickup.name} />
         <h4>{pickup.boxNumber}</h4>
       </div>
