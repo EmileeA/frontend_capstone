@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import authData from '../../../helpers/data/authData';
 import pickupData from '../../../helpers/data/pickupData';
@@ -31,7 +31,11 @@ class MyPickups extends React.Component {
           {this.state.stuff.map((pickup) => <Stuff key={pickup.id} pickup={pickup} />)}
         </div>
       <div>
-        <button className="btn btn-dark schedule">Schedule a Pickup</button>
+      <Link to="/scheduleapickup">
+     <button button className="btn btn-dark schedule">
+     Schedule a Pickup
+     </button>
+ </Link>
       </div>
       </div>
     );
