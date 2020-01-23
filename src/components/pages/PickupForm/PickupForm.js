@@ -55,7 +55,7 @@ savePickupEvent = (e) => {
     uid: authData.getUid(),
   };
   pickupData.savePickup(newPickup)
-    .then(() => this.props.history.push('/myaccount'))
+    .then(() => this.props.history.push('/stuff'))
     .catch((error) => console.error('err from save pickup event', error));
 }
 
@@ -70,7 +70,7 @@ saveChangesEvent = (e) => {
     uid: authData.getUid(),
   };
   pickupData.updatePickup(pickupId, updatedPickup)
-    .then(() => this.props.history.push('/myaccount'))
+    .then(() => this.props.history.push('/stuff'))
     .catch((error) => console.error('error from save item event', error));
 }
 
