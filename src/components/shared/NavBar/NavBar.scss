@@ -2,28 +2,31 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
-
 .NavBar {
   display: block;
 }
 
-
 .nav-link {
   font-family: 'Open Sans', sans-serif;
   border-right: .5px groove black;
-  margin-right: 5px;
-  margin-left: 5px;
-  margin-top: 0;
-  line-height: .5em;
+  padding-left: 25px!important;
+  padding-right: 25px!important;
+  margin-top: 0%;
+  line-height: 15%;
   color: black;
 }
 
 #tacoBell {
   line-height: 0!important;
-  margin-top: 2px;
+  margin-top: 1%;
+  background-color: transparent!important;
 }
 
 img {
-    width: 30%!important;
+    width: 50%!important;
     height: auto!important;
+}
+
+.logo {
+  max-width: 30%!important;
 }

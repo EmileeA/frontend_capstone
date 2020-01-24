@@ -13,11 +13,11 @@ class Auth extends React.Component {
 
   render() {
     return (
-      <div ClassName="Home">
+      <div className="Home">
       <div className="loadText">
         <h1>Reduce. Reuse. Reebox</h1>
         </div>
-      <div className="Auth">
+      <div className="Auth text-center">
         <button className="btn btn-dark" id="loadSignin" onClick={this.loginClickEvent}>Sign In</button>
       </div>
       </div>
