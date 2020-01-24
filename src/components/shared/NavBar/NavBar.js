@@ -49,7 +49,6 @@ class NavBar extends React.Component {
     return (
       <div className="NavBar">
         <nav className="navbar navbar-expand-lg navbar-white bg-white d-flex justify-content-between">
-          {/* <Link className="navbar-brand Home" to="/">Reebox</Link> */}
           <Link className="navbar-brand logo" to="/"> <img src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/Reeboxlogo.png" alt="Reebox"></img></Link>
          <button className="navbar-toggler" type="button" data-toggle="collapse"
          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
