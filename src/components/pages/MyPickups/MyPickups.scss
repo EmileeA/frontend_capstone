@@ -13,14 +13,20 @@
   display: block;
 }
 
+#MyAccounth1{
+  text-align: center;
+}
+
 #schedulebtn {
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 3em;
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 35%;
-    right: 35%;
-    top: 75%;
-    width: 20%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center!important;
+  // margin-top: 3em;
+  // position: absolute;
+  // z-index: 999;
+  // margin: 0 auto;
+  // left: 35%;
+  // right: 35%;
+  // top: 85%;
+  // width: 20%;
   }

@@ -37,7 +37,7 @@ class SinglePickup extends React.Component {
         <Link className="btn btn-dark m-2" to={`/myaccount/${pickupId}/edit`}>Edit</Link>
         <button className="btn btn-dark m-2"onClick={this.deletePickupEvent}>Delete</button>
         </div>
-        <img className="w-50" src={pickup.image} alt={pickup.name} />
+        <img className="w-50" id="pickupImg" src={pickup.image} alt={pickup.name} />
         <h4>{pickup.boxNumber}</h4>
       </div>
     );

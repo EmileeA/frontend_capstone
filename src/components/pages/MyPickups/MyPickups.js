@@ -32,7 +32,9 @@ class MyPickups extends React.Component {
   render() {
     return (
       <div className="MyPickups">
+        <div className="MyAccount" id="MyAccounth1">
         <h1>My Account</h1>
+        </div>
         <div className="stuff container d-flex flex-wrap">
           {this.state.stuff.map((pickup) => <Stuff key={pickup.id} deletePickup={this.deletePickup} pickup={pickup} />)}
         </div>

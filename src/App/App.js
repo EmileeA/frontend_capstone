@@ -53,9 +53,7 @@ class App extends React.Component {
 
     return (
     <div className="App">
-      {/* <NavBar authed={authed} />
-    { authed === true ? (<Home />) : (<Auth authed={authed} />) } */}
-      <Router>
+        <Router>
         <NavBar authed={authed}/>
         <Switch>
           <PrivateRoute path="/" exact component={Home} authed={authed}/>
