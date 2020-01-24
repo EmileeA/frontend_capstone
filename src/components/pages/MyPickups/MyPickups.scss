@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 .MyPickups {
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 50px;
+}
+
+.stuff {
+  margin-top: 50px;
+}
+
+.MyPickups {
   display: block;
 }
 
-.scheduleapickup {
-  display: flex;
-  justify-content: center;
-}
+#schedulebtn {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3em;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 35%;
+    right: 35%;
+    top: 75%;
+    width: 20%;
+  }

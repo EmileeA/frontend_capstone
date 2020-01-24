@@ -38,7 +38,7 @@ class MyPickups extends React.Component {
         </div>
       <div>
       <Link to="/scheduleapickup">
-     <button button className="btn btn-dark schedule">
+     <button button className="btn btn-dark" id="schedulebtn">
      Schedule a Pickup
      </button>
  </Link>

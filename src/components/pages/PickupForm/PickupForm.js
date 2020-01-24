@@ -84,7 +84,7 @@ render() {
     <div className="PickupForm">
       <form className="PickupForm">
       <div className="form-group">
-        <label htmlFor="name">Name</label>
+        <label htmlFor="name"></label>
         <input
           type="text"
           className="form-control col-4 m-auto"
@@ -94,7 +94,7 @@ render() {
           onChange={this.nameChange}
           >
         </input>
-        <label htmlFor="address">Address</label>
+        <label htmlFor="address"></label>
         <input
           type="text"
           className="form-control col-4 m-auto"
@@ -104,7 +104,7 @@ render() {
           onChange={this.addressChange}
           >
           </input>
-        <label htmlFor="boxNumber">Number of Boxes</label>
+        <label htmlFor="boxNumber"></label>
         <input
           type="text"
           className="form-control col-4 m-auto"
@@ -114,7 +114,7 @@ render() {
           onChange={this.boxNumberChange}
           >
           </input>
-          <label htmlFor="pickupDay">Pickup Day</label>
+          <label htmlFor="pickupDay"></label>
         <input
           type="text"
           className="form-control col-4 m-auto"
@@ -127,8 +127,8 @@ render() {
       </div>
       {
           pickupId
-            ? (<button className="btn btn-dark" onClick={this.saveChangesEvent}>Save Changes</button>)
-            : (<button className="btn btn-dark" onClick={this.savePickupEvent}>Save Pickup</button>)
+            ? (<button className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes</button>)
+            : (<button className="btn btn-dark" id="save" onClick={this.savePickupEvent}>Save Pickup</button>)
         }
     </form>
     </div>
