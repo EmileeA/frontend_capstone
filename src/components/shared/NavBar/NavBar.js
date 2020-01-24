@@ -5,6 +5,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import './NavBar.scss';
 
+
 class NavBar extends React.Component {
   static propTypes = {
     authed: PropTypes.bool,
@@ -19,7 +20,7 @@ class NavBar extends React.Component {
     const { authed } = this.props;
     const buildNavbar = () => {
       if (authed) {
-    return (
+        return (
       <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <Link className="nav-link" to="#features">Features</Link>
@@ -47,9 +48,9 @@ class NavBar extends React.Component {
 
     return (
       <div className="NavBar">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+        <nav className="navbar navbar-expand-lg navbar-white bg-white d-flex justify-content-between">
           {/* <Link className="navbar-brand Home" to="/">Reebox</Link> */}
-          <Link className="navbar-brand Home">to="/" <img src="img/blockins-logo.png" alt="Reebox"></img></Link>
+          <Link className="navbar-brand logo" to="/"> <img src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/Reeboxlogo.png" alt="Reebox"></img></Link>
          <button className="navbar-toggler" type="button" data-toggle="collapse"
          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
