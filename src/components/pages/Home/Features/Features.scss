@@ -4,11 +4,40 @@
   display: block;
 }
 
-#featuresh1Id {
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  justify-content: center;
-  color: black;
-  font-weight: 300;
-  font-size: 20px;
+.featuresh1Id {
+  position: relative;
+  text-align: center;
+  font-size: 43px;
+  color: #666666!important;
+}
+
+.featuresCol {
+  box-sizing: border-box;
+  }
+
+.fblurb-top {
+text-align: center;
+}
+
+.fblurb-content {
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fblurb-image {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 30px;
+  line-height: 0;
+}
+
+.image-wrap {
+  display: block;
+  margin: auto;
+}
+
+.fblurb-description {
+  flex-wrap: wrap;
 }

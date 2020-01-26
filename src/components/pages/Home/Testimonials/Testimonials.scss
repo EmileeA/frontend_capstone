@@ -3,3 +3,41 @@
 .Testimonals {
   display: block;
 }
+
+.testimonialsh1Id {
+  position: relative;
+  text-align: center;
+  font-size: 43px;
+  color: #666666!important;
+}
+
+.testimonialCol {
+  box-sizing: border-box;
+  }
+
+.tblurb-top {
+text-align: center;
+}
+
+.tblurb-content {
+  position: relative;
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tblurb-image {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 30px;
+  line-height: 0;
+}
+
+.image-wrap {
+  display: block;
+  margin: auto;
+}
+
+.tblurb-description {
+  flex-wrap: wrap;
+}
