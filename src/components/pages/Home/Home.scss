@@ -1,28 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 #homeImgId {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  z-index: 990;
+  //display: block;
   width: 100%;
   height: auto;
-  max-height: 100%;
-  margin-top: 0%;
-  background-size:100% 100%;
-  background-repeat: no-repeat;
+  object-fit: cover;
+
  }
 
  #homeh1Id {
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  justify-content: center;
   position: absolute;
-  z-index: 999;
-  // margin: 0 auto;
-  // left: 10%;
-  // right: 10%;
-  top: 45%;
+  top: 55%;
   color: white;
 }
 

@@ -50,6 +50,7 @@ savePickupEvent = (e) => {
   const newPickup = {
     name: this.state.name,
     address: this.state.address,
+    image: 'https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/RecycleTruckIcon.png',
     boxNumber: this.state.boxNumber,
     pickupDay: this.state.pickupDay,
     uid: authData.getUid(),
@@ -124,7 +125,7 @@ render() {
           onChange={this.pickupDayChange}
           >
           </input>
-      </div>
+         </div>
       {
           pickupId
             ? (<button className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes</button>)

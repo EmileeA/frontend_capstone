@@ -13,7 +13,7 @@ class Auth extends React.Component {
 
   render() {
     return (
-      <div className="Home">
+      <div className="Auth">
       <div className="loadText" id="loadTexth1">
         <h1>Reduce. Reuse. Reebox</h1>
         </div>

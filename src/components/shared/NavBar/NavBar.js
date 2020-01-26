@@ -48,7 +48,7 @@ class NavBar extends React.Component {
     };
 
     return (
-      <div className="NavBar">
+      <div className="NavBar sticky">
         <nav className="navbar navbar-expand-lg navbar-white bg-white d-flex justify-content-between">
           <Link className="navbar-brand logo" to="/"><img src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/Reeboxlogo.png" alt="Reebox" id="logoImgId"></img></Link>
          <button className="navbar-toggler" type="button" data-toggle="collapse"

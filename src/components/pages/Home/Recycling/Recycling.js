@@ -4,9 +4,13 @@ import './Recycling.scss';
 class Recycling extends React.Component {
   render() {
     return (
-      <div className="Recycling">
-        <h1>Recycling</h1>
+      <div className="Recycling container" id="recyclingId">
+      <div className="row">
+      <div className="col">
+      <h1>Recycling Tips</h1>
       </div>
+    </div>
+    </div>
     );
   }
 }

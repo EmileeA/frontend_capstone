@@ -2,31 +2,29 @@
 
 .MyPickups {
   font-family: 'Open Sans', sans-serif;
-  margin-top: 50px;
+  margin-top: 2%;
 }
 
 .stuff {
-  margin-top: 50px;
+  margin-top: 3%;
 }
 
 .MyPickups {
   display: block;
 }
 
-#MyAccounth1{
+#MyAccounth1 {
   text-align: center;
 }
 
 #schedulebtn {
   font-family: 'Open Sans', sans-serif;
-  display: flex;
-  justify-content: center!important;
-  // margin-top: 3em;
-  // position: absolute;
-  // z-index: 999;
-  // margin: 0 auto;
-  // left: 35%;
-  // right: 35%;
-  // top: 85%;
-  // width: 20%;
+  text-align: center!important;
+  margin-top: 10%;;
+  position: fixed;
+  margin: 0 auto;
+  left: 35%;
+  right: 35%;
+  top: 90%;
+  width: 20%;
   }
