@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './PickupForm.scss';
 import authData from '../../../helpers/data/authData';
 import pickupData from '../../../helpers/data/pickupData';
@@ -66,6 +65,7 @@ saveChangesEvent = (e) => {
   const updatedPickup = {
     name: this.state.name,
     address: this.state.address,
+    image: 'https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/RecycleTruckIcon.png',
     boxNumber: this.state.boxNumber,
     pickupDay: this.state.pickupDay,
     uid: authData.getUid(),
@@ -127,9 +127,9 @@ render() {
           </input>
          </div>
       {
-          pickupId
-            ? (<button className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes</button>)
-            : (<button className="btn btn-dark" id="save" onClick={this.savePickupEvent}>Save Pickup</button>)
+        pickupId
+          ? (<button className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes</button>)
+          : (<button className="btn btn-dark" id="save" onClick={this.savePickupEvent}>Save Pickup</button>)
         }
     </form>
     </div>

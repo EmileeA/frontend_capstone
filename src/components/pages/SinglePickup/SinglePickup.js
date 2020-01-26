@@ -32,12 +32,12 @@ class SinglePickup extends React.Component {
     const { pickupId } = this.props.match.params;
     return (
      <div className="SinglePickup container">
-        <h1>{pickup.name}</h1>
         <div className="d-flex justify-content-center">
         <Link className="btn btn-dark m-2" to={`/myaccount/${pickupId}/edit`}>Edit</Link>
         <button className="btn btn-dark m-2"onClick={this.deletePickupEvent}>Delete</button>
         </div>
         <img className="w-50" id="pickupImg" src={pickup.image} alt={pickup.name} />
+        <h4>{pickup.name}</h4>
         <h4>{pickup.boxNumber}</h4>
       </div>
     );
