@@ -9,10 +9,12 @@ class Testimonials extends React.Component {
           <div className="col">
             <div className="testimonialsh1Id ">
               <h1>Testimonials</h1>
+              <div className="recyclinginnerText">
               <p>
                 See why many customers prefer curbside recycling over recycle
                 drop off centers.
               </p>
+            </div>
             </div>
           </div>
           <div className="row">

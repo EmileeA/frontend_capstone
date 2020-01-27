@@ -10,6 +10,7 @@ class Features extends React.Component {
           <div className="col">
             <div className="featuresh1Id ">
               <h1>Convient. Affordable. Simple</h1>
+              <div className="featuresinnerText">
               <p>
                 Here at ReeBox we understand that although it’s important to
                 recycle, there are more important things to worry about. It’s
@@ -18,6 +19,7 @@ class Features extends React.Component {
                 in convenient, reliable, and affordable services with minimal
                 effort on your part.
               </p>
+              </div>
             </div>
           </div>
          <div className="row">

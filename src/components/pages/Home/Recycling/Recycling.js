@@ -9,11 +9,13 @@ class Recycling extends React.Component {
           <div className="col">
             <div className="recyclingh1Id">
               <h1>Recycling Tips</h1>
+              <div className="recyclinginnerText">
               <p>Looking for help on how to recycle in your city?</p>
               <p>
                 We’ve compiled some tips for how to best wherever you’re
                 located.
               </p>
+            </div>
             </div>
           </div>
           <div className="row">
