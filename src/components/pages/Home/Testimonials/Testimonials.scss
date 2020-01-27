@@ -5,9 +5,9 @@
 }
 
 .testimonialsh1Id {
+  text-align: center;
   margin-block-start: 1em;
   position: relative;
-  text-align: center;
   font-size: 43px;
   color: #666666!important;
 }
@@ -15,18 +15,18 @@
 .testimonialsinnerText{
   text-align: left;
   position: relative;
-  display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: 300;
   font-size: 20px;
+  line-height: 1.7em;
 }
 
-.testimonialCol {
-  box-sizing: border-box;
-  }
+// .testimonialCol {
+//   box-sizing: border-box;
+//   }
 
 .tblurb-top {
 text-align: center;
@@ -34,26 +34,23 @@ text-align: center;
 
 .tblurb-content {
   position: relative;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
-  text-align: center;
   color: #666666!important;
-  line-height: 1.7em;
-  padding-bottom: 1em;
 }
 
-.tblurb-image {
-  display: inline-block;
-  max-width: 100%;
+
+#tblurbImgId1 {
+  max-width: 80%;
+  height: auto;
   margin-bottom: 30px;
-  line-height: 0;
 }
 
-.image-wrap {
-  display: block;
-  margin: auto;
-}
+// .image-wrap {
+//   display: block;
+//   margin: auto;
+// }
 
-.tblurb-description {
-  flex-wrap: wrap;
-}
+// .tblurb-description {
+//   flex-wrap: wrap;
+// }

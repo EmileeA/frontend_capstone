@@ -4,7 +4,7 @@ import './Recycling.scss';
 class Recycling extends React.Component {
   render() {
     return (
-      <div className="Recycling container-fluid" id="recyclingId">
+      <div className="Recycling container-fluid">
         <div className="row">
           <div className="col">
             <div className="recyclingh1Id">
@@ -20,20 +20,20 @@ class Recycling extends React.Component {
           </div>
           <div className="row">
             <div className="col-4 recycleCol">
-              <div className="blurb-top">
-                <div className="blurb-content">
-                  <div className="blurb-image">
-                    <span className="image-wrap">
+              <div className="rblurb-top">
+                <div className="rblurb-content">
+                  <div className="rblurb-image">
+                    <span className="rimage-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/cristian-palmer-1DmGYtJYyuI-unsplash.jpg"
                         alt="blurb Img"
-                        id="blurbImgId1"
+                        id="rblurbImgId1"
                       />
                     </span>
-                    <div className="blurb-container-header">
+                    <div className="rblurb-container-header">
                       <h4>Boxes</h4>
                     </div>
-                    <div className="blurb-description">
+                    <div className="rblurb-description">
                       <p>No need to break down boxes</p>
                     </div>
                   </div>
@@ -41,20 +41,20 @@ class Recycling extends React.Component {
               </div>
             </div>
             <div className="col-4 recycleCol">
-              <div className="blurb-top">
-                <div className="blurb-content">
-                  <div className="blurb-image">
-                    <span className="image-wrap">
+              <div className="rblurb-top">
+                <div className="rblurb-content">
+                  <div className="rblurb-image">
+                    <span className="rimage-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/casey-horner-4rDCa5hBlCs-unsplash.jpg"
                         alt="blurb Img"
-                        id="blurbImgId1"
+                        id="rblurbImgId1"
                       />
                     </span>
-                    <div className="blurb-container-header">
+                    <div className="rblurb-container-header">
                       <h4>Place them on the curb</h4>
                     </div>
-                    <div className="blurb-description d-flex">
+                    <div className="rblurb-description d-flex">
                       <p>Put your boxes out on your recycling pick-up day</p>
                     </div>
                   </div>
@@ -62,20 +62,20 @@ class Recycling extends React.Component {
               </div>
             </div>
             <div className="col-4 recycleCol">
-              <div className="blurb-top">
-                <div className="blurb-content">
-                  <div className="blurb-image">
-                    <span className="image-wrap">
+              <div className="rblurb-top">
+                <div className="rblurb-content">
+                  <div className="rblurb-image">
+                    <span className="rimage-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/cristian-palmer-1DmGYtJYyuI-unsplash.jpg"
                         alt="blurb Img"
-                        id="blurbImgId1"
+                        id="rblurbImgId1"
                       />
                     </span>
-                    <div className="blurb-container-header">
+                    <div className="rblurb-container-header">
                       <h4>We'll do the rest</h4>
                     </div>
-                    <div className="blurb-description">
+                    <div className="rblurb-description">
                       <p>
                         We'll be by on your recycling day, and if you ever need
                         additional pick-ups, just let us know!

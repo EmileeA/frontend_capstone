@@ -5,17 +5,16 @@
 }
 
 .recyclingh1Id {
+  text-align: center;
   margin-block-start: 1em;
   position: relative;
-  text-align: center;
   font-size: 43px;
   color: #666666!important;
 }
 
 .recyclinginnerText{
-  text-align: left;
+  text-align: center;
   position: relative;
-  display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -25,34 +24,32 @@
   line-height: 1.7em;
 }
 
-.recycleCol {
-box-sizing: border-box;
-}
+// .recycleCol {
+// box-sizing: border-box;
+// }
 
-.blurb-top {
+.rblurb-top {
 text-align: center;
 }
 
-.blurb-content {
+.rblurb-content {
   position: relative;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
-  text-align: center;
   color: #666666!important;
 }
 
-.blurb-image {
-  display: inline-block;
-  max-width: 100%;
+#rblurbImgId1 {
+  max-width: 80%;
+  height: auto;
   margin-bottom: 30px;
-  line-height: 0;
 }
 
-.image-wrap {
-  display: block;
-  margin: auto;
-}
+// .rimage-wrap {
+//   display: block;
+//   margin: auto;
+// }
 
-.blurb-description {
-  flex-wrap: wrap;
-}
+// .blurb-description {
+//   flex-wrap: wrap;
+// }
