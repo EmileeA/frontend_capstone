@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import './Testimonials.scss';
 
@@ -24,16 +25,16 @@ class Testimonials extends React.Component {
                   <div className="tblurb-image">
                     <span className="image-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/nonsap-visuals-kMJp7620W6U-unsplash.jpg"
                         alt="tblurb Img"
                         id="tblurbImgId1"
                       />
                     </span>
                     <div className="tblurb-container-header">
-                      <h4>Boxes</h4>
+                      <h4>Sullivan Harris</h4>
                     </div>
                     <div className="tblurb-description">
-                      <p>No need to break down boxes</p>
+                      <p>Reebox is super convenient. I used to have to take all my recycling to the Nashville public works bins. But now I can just leave it outside my door. :) I hate how apartment complexes refuse to have recycling bins, so reebox is a great way to still recycle, and be super convenient.</p>
                     </div>
                   </div>
                 </div>
@@ -45,16 +46,16 @@ class Testimonials extends React.Component {
                   <div className="tblurb-image">
                     <span className="image-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/jessica-rockowitz-E4USFFAc_9A-unsplash.jpg"
                         alt="tblurb Img"
                         id="tblurbImgId1"
                       />
                     </span>
                     <div className="tblurb-container-header">
-                      <h4>Place them on the curb</h4>
+                      <h4>Jackson Family</h4>
                     </div>
                     <div className="tblurb-description">
-                      <p>Put your boxes out on your recycling pick-up day</p>
+                      <p>Reebox is the best. They offer an extremely needed service, are priced fairly and convenient. They aren't perfect and have some bugs (as every growing company does) but they are always helpful, responsive, and willing to correct them. I honestly love their service so much!</p>
                     </div>
                   </div>
                 </div>
@@ -66,18 +67,17 @@ class Testimonials extends React.Component {
                   <div className="tblurb-image">
                     <span className="image-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/humphrey-muleba-Cc-CQTUkbH0-unsplash.jpg"
                         alt="tblurb Img"
                         id="tblurbImgId1"
                       />
                     </span>
                     <div className="tblurb-container-header">
-                      <h4>We'll do the rest</h4>
+                      <h4>Wesley and Ossie</h4>
                     </div>
                     <div className="tblurb-description">
                       <p>
-                        We'll be by on your recycling day, and if you ever need
-                        additional pick-ups, just let us know!
+                      I love having this service! I have had curbside pickup weekly for 7 months. They have never missed a pick-up! It is affordable and has reduced my household landfill trash by two thirds. Looking forward to having glass added!
                       </p>
                     </div>
                   </div>

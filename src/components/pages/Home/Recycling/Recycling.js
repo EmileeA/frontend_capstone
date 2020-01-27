@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React from 'react';
 import './Recycling.scss';
 
@@ -31,10 +32,10 @@ class Recycling extends React.Component {
                       />
                     </span>
                     <div className="rblurb-container-header">
-                      <h4>Boxes</h4>
+                      <h4>Use products made from recycled materials</h4>
                     </div>
                     <div className="rblurb-description">
-                      <p>No need to break down boxes</p>
+                      <p>Now days there are many manufactures that focus on selling products made strictly from recycled materials. Many grocers have eco-friendly products on their shelves that use packaging made from 100% recycled paper or plastic. Eco-friendly products help reduce the amount of plastic pollution. Did you know that only 27% of plastic bottles are recycled. The rest sit in landfills where they can take up to 1,000 years to decompose.</p>
                     </div>
                   </div>
                 </div>
@@ -52,10 +53,10 @@ class Recycling extends React.Component {
                       />
                     </span>
                     <div className="rblurb-container-header">
-                      <h4>Place them on the curb</h4>
+                      <h4>Buy products that can be recycled.</h4>
                     </div>
                     <div className="rblurb-description d-flex">
-                      <p>Put your boxes out on your recycling pick-up day</p>
+                      <p>Buying recycled products is an important step in completing the life-cycle of a recycled item and “closing the loop” on the recycling process. By purchasing products with recycled content you prevent those materials from ending up in a landfill and do your part to maintain consumer demand for recyclables and ensure the continuation of recycling programs.</p>
                     </div>
                   </div>
                 </div>
@@ -73,12 +74,11 @@ class Recycling extends React.Component {
                       />
                     </span>
                     <div className="rblurb-container-header">
-                      <h4>We'll do the rest</h4>
+                      <h4>Know what can and can't be recycled</h4>
                     </div>
                     <div className="rblurb-description">
                       <p>
-                        We'll be by on your recycling day, and if you ever need
-                        additional pick-ups, just let us know!
+                      If you really want to commit to recycling and wonder what else you can recycle, use this site to find out! https://www.ohswa.org/amirecyclable
                       </p>
                     </div>
                   </div>
