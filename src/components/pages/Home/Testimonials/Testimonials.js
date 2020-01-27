@@ -4,7 +4,7 @@ import './Testimonials.scss';
 class Testimonials extends React.Component {
   render() {
     return (
-      <div className="Testimonials container-fluid" id="testimonialsId">
+      <div id="testimonials" className="Testimonials container-fluid">
         <div className="row">
           <div className="col">
             <div className="testimonialsh1Id ">

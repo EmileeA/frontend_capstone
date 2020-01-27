@@ -5,11 +5,11 @@ import './Features.scss';
 class Features extends React.Component {
   render() {
     return (
-      <div className="Features container-fluid" id="featuresId">
+      <div className="Features container-fluid">
         <div className="row">
           <div className="col">
             <div className="featuresh1Id ">
-              <h1>Convient. Affordable. Simple</h1>
+              <h1>Convenient. Affordable. Simple</h1>
               <div className="featuresinnerText">
               <p>
                 Here at ReeBox we understand that although it’s important to
@@ -29,7 +29,7 @@ class Features extends React.Component {
                 <div className="fblurb-image">
                   <span className="image-wrap">
                     <img
-                      src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                      src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/box.png"
                       alt="fblurb Img"
                       id="fblurbImgId1"
                     />
@@ -44,13 +44,13 @@ class Features extends React.Component {
               </div>
             </div>
           </div>
-          <div className="col-4 featuresCol">
+          <div className="col-4 featuresCol" id="features">
             <div className="fblurb-top">
               <div className="fblurb-content">
                 <div className="fblurb-image">
                   <span className="image-wrap">
                     <img
-                      src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                      src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/truckman.png"
                       alt="fblurb Img"
                       id="fblurbImgId1"
                     />
@@ -71,7 +71,7 @@ class Features extends React.Component {
                 <div className="fblurb-image">
                   <span className="image-wrap">
                     <img
-                      src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/empty-cardboard-boxes.jpg"
+                      src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/recyclecardboard.png"
                       alt="fblurb Img"
                       id="fblurbImgId1"
                     />

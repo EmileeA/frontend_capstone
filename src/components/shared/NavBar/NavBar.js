@@ -1,10 +1,16 @@
 /* eslint-disable max-len */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import './NavBar.scss';
+
+const ELEMENT_IDS = {
+  FEATURES: 'features',
+  RECYCLING: 'recycling',
+  TESTIMONIALS: 'testimonials',
+};
 
 class NavBar extends React.Component {
   static propTypes = {
@@ -16,6 +22,15 @@ class NavBar extends React.Component {
     firebase.auth().signOut();
   };
 
+  goToId = (id) => {
+    if (this.props.history.location.pathname !== '/') {
+      this.props.history.push('/');
+    } else {
+      const element = document.getElementById(id);
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   render() {
     const { authed } = this.props;
     const buildNavbar = () => {
@@ -23,17 +38,29 @@ class NavBar extends React.Component {
         return (
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="#features">
+              <Link
+                className="nav-link"
+                to="#features"
+                onClick={() => this.goToId(ELEMENT_IDS.FEATURES)}
+              >
                 Features
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#recycling">
+              <Link
+                className="nav-link"
+                to="#recycling"
+                onClick={() => this.goToId(ELEMENT_IDS.RECYCLING)}
+              >
                 Recycling Tips
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#testimonials">
+              <Link
+                className="nav-link"
+                to="#testimonials"
+                onClick={() => this.goToId(ELEMENT_IDS.TESTIMONIALS)}
+              >
                 Testimonials
               </Link>
             </li>
@@ -93,4 +120,4 @@ class NavBar extends React.Component {
   }
 }
 
-export default NavBar;
+export default withRouter(NavBar);

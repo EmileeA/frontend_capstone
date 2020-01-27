@@ -15,7 +15,6 @@
 .featuresinnerText{
   text-align: left;
   position: relative;
-  display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -25,34 +24,33 @@
   line-height: 1.7em;
 }
 
-.featuresCol {
-  box-sizing: border-box;
-  }
+// .featuresCol {
+//   box-sizing: border-box;
+// }
 
 .fblurb-top {
-text-align: center;
+  text-align: center;
 }
 
 .fblurb-content {
   position: relative;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
-  text-align: center;
   color: #666666!important;
 }
 
-.fblurb-image {
-  display: inline-block;
-  max-width: 100%;
+#fblurbImgId1 {
+  max-width: 80%;
+  height: auto;
   margin-bottom: 30px;
-  line-height: 0;
 }
 
-.image-wrap {
-  display: block;
-  margin: auto;
-}
+// .image-wrap {
+//   margin: auto;
+//   max-width: 100%;
+//   height: auto;
+// }
 
-.fblurb-description {
-  flex-wrap: wrap;
-}
+// .fblurb-description {
+//   // flex-wrap: wrap;
+// }
