@@ -26,7 +26,7 @@ class Recycling extends React.Component {
                   <div className="rblurb-image">
                     <span className="rimage-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/cristian-palmer-1DmGYtJYyuI-unsplash.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/woman-reading-label.jpg"
                         alt="blurb Img"
                         id="rblurbImgId1"
                       />
@@ -47,7 +47,7 @@ class Recycling extends React.Component {
                   <div className="rblurb-image">
                     <span className="rimage-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/casey-horner-4rDCa5hBlCs-unsplash.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/christiann-koepke-r6rokVkrwZk-unsplash.jpg"
                         alt="blurb Img"
                         id="rblurbImgId1"
                       />
@@ -68,7 +68,7 @@ class Recycling extends React.Component {
                   <div className="rblurb-image">
                     <span className="rimage-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/cristian-palmer-1DmGYtJYyuI-unsplash.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/family-recycling.jpg"
                         alt="blurb Img"
                         id="rblurbImgId1"
                       />

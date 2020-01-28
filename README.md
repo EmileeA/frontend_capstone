@@ -20,6 +20,6 @@
 ----
 
 ----
-## Thanks for checkouting out Reebox
+## Thanks for checking out Reebox
 ### Checkout my GitHub to see other projects
 * [https://github.com/EmileeA](https://github.com/EmileeA)
