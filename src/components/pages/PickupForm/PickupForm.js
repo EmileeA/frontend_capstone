@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, withRouter } from 'react-router-dom';
 import './PickupForm.scss';
 import authData from '../../../helpers/data/authData';
 import pickupData from '../../../helpers/data/pickupData';
@@ -83,6 +84,7 @@ class PickupForm extends React.Component {
       .catch((error) => console.error('error from save item event', error));
   };
 
+
   render() {
     const {
       name, address, boxNumber, pickupDay,
@@ -93,6 +95,9 @@ class PickupForm extends React.Component {
       <div className="PickupForm">
         <form className="PickupForm">
           <div className="form-group">
+            <div className="newPickuph1">
+            <h1>Schedule a New Pickup</h1>
+            </div>
             <label htmlFor="name"></label>
             <input
               type="text"
@@ -130,27 +135,14 @@ class PickupForm extends React.Component {
               onChange={this.pickupDayChange}
             ></input>
           </div>
-          {pickupId ? (
-            <button
-              className="btn btn-dark"
-              id="save"
-              onClick={this.saveChangesEvent}
-            >
-              Save Changes
-            </button>
-          ) : (
-            <button
-              className="btn btn-dark"
-              id="save"
-              onClick={this.savePickupEvent}
-            >
-              Save Pickup
-            </button>
-          )}
+          {pickupId
+            ? (<Link className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes></Link>)
+            : (<Link className="btn btn-dark" id="save" onClick={this.savePickupEvent}>Save Pickup></Link>)
+          }
         </form>
       </div>
     );
   }
 }
 
-export default PickupForm;
+export default withRouter(PickupForm);

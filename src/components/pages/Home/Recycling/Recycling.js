@@ -78,7 +78,7 @@ class Recycling extends React.Component {
                     </div>
                     <div className="rblurb-description">
                       <p>
-                      If you really want to commit to recycling and wonder what else you can recycle, use this site to find out! https://www.ohswa.org/amirecyclable
+                      If you really want to commit to recycling and wonder what else you can do, use this site to find out! https://www.ohswa.org/amirecyclable
                       </p>
                     </div>
                   </div>

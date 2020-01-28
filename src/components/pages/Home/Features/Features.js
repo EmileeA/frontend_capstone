@@ -27,7 +27,7 @@ class Features extends React.Component {
             <div className="fblurb-top">
               <div className="fblurb-content">
                 <div className="fblurb-image">
-                  <span className="image-wrap">
+                  <span className="fimage-wrap">
                     <img
                       src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/box.png"
                       alt="fblurb Img"
@@ -48,7 +48,7 @@ class Features extends React.Component {
             <div className="fblurb-top">
               <div className="fblurb-content">
                 <div className="fblurb-image">
-                  <span className="image-wrap">
+                  <span className="fimage-wrap">
                     <img
                       src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/truckman.png"
                       alt="fblurb Img"
@@ -69,7 +69,7 @@ class Features extends React.Component {
             <div className="fblurb-top">
               <div className="fblurb-content">
                 <div className="fblurb-image">
-                  <span className="image-wrap">
+                  <span className="fimage-wrap">
                     <img
                       src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/recyclecardboard.png"
                       alt="fblurb Img"

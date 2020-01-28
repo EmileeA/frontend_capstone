@@ -22,16 +22,14 @@
   position: relative;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 6%;
+  margin-inline-end: 6%;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.7em;
-}
+  margin-bottom: 2%;
 
-// .testimonialCol {
-//   box-sizing: border-box;
-//   }
+}
 
 .tblurb-top {
 text-align: center;
@@ -42,23 +40,17 @@ text-align: center;
   max-width: 500px;
   margin: 0 auto;
   color: #666666!important;
-  // border:2px #66666620 solid;
 }
 
 
-#tblurbImgId1 {
-  width: 300px;
-  height: 200px;
-  max-width: 80%;
-  height: auto;
+.image-wrap img {
+  object-fit: contain;
+  width: 500px;
+  height: 400px;
   margin-bottom: 30px;
 }
 
-// .image-wrap {
-//   display: block;
-//   margin: auto;
-// }
-
-// .tblurb-description {
-//   flex-wrap: wrap;
-// }
+.tblurb-description {
+  text-align: left;
+  margin-left: 4%;
+}
