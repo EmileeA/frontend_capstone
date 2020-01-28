@@ -4,6 +4,10 @@
   display: block;
 }
 
+.featuresCol {
+  box-sizing: border-box;
+}
+
 .featuresh1Id {
   text-align: center;
   margin-block-start: 2em;
@@ -27,11 +31,10 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 1.7em;
+  margin-bottom: 2%;
 }
 
-// .featuresCol {
-//   box-sizing: border-box;
-// }
+
 
 .fblurb-top {
   text-align: center;
@@ -44,18 +47,9 @@
   color: #666666!important;
 }
 
-#fblurbImgId1 {
-  max-width: 80%;
-  height: auto;
+.fimage-wrap img {
+  object-fit: contain;
+  width: 450px;
+  height: 350px;
   margin-bottom: 30px;
 }
-
-// .image-wrap {
-//   margin: auto;
-//   max-width: 100%;
-//   height: auto;
-// }
-
-// .fblurb-description {
-//   // flex-wrap: wrap;
-// }

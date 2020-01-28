@@ -25,7 +25,7 @@ class SinglePickup extends React.Component {
     const { pickupId } = this.props.match.params;
     pickupData
       .deletePickup(pickupId)
-      .then(() => this.props.history.push('/stuff'))
+      .then(() => this.props.history.push('/myaccount'))
       .catch((error) => console.error('error from single pickups', error));
   };
 

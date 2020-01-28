@@ -22,16 +22,13 @@
   position: relative;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-inline-start: 6%;
+  margin-inline-end: 6%;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.7em;
+  margin-bottom: 2%;
 }
-
-// .recycleCol {
-// box-sizing: border-box;
-// }
 
 .rblurb-top {
 text-align: center;
@@ -44,17 +41,14 @@ text-align: center;
   color: #666666!important;
 }
 
-#rblurbImgId1 {
-  max-width: 80%;
-  height: auto;
+.rimage-wrap img {
+  object-fit: contain;
+  width: 500px;
+  height: 400px;
   margin-bottom: 30px;
 }
 
-// .rimage-wrap {
-//   display: block;
-//   margin: auto;
-// }
-
-// .blurb-description {
-//   flex-wrap: wrap;
-// }
+.rblurb-description {
+  text-align: left;
+  margin-left: 4%;
+}
