@@ -6,7 +6,7 @@ class Features extends React.Component {
   render() {
     return (
       <div className="Features container-fluid">
-        <div className="row">
+        <div className="row" id="frow">
           <div className="col">
             <div className="featuresh1Id ">
               <h1>Convenient. Affordable. Simple</h1>

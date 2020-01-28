@@ -6,7 +6,7 @@ class Recycling extends React.Component {
   render() {
     return (
       <div className="Recycling container-fluid">
-        <div className="row">
+        <div className="row" id="rrow">
           <div className="col">
             <div className="recyclingh1Id">
               <h1>Recycling Tips</h1>
