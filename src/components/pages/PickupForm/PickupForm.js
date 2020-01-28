@@ -62,7 +62,7 @@ class PickupForm extends React.Component {
     };
     pickupData
       .savePickup(newPickup)
-      .then(() => this.props.history.push('/stuff'))
+      .then(() => this.props.history.push('/myaccount'))
       .catch((error) => console.error('err from save pickup event', error));
   };
 
@@ -80,7 +80,7 @@ class PickupForm extends React.Component {
     };
     pickupData
       .updatePickup(pickupId, updatedPickup)
-      .then(() => this.props.history.push('/stuff'))
+      .then(() => this.props.history.push('/myaccount'))
       .catch((error) => console.error('error from save item event', error));
   };
 
@@ -136,8 +136,8 @@ class PickupForm extends React.Component {
             ></input>
           </div>
           {pickupId
-            ? (<Link className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes></Link>)
-            : (<Link className="btn btn-dark" id="save" onClick={this.savePickupEvent}>Save Pickup></Link>)
+            ? (<Link className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes</Link>)
+            : (<Link className="btn btn-dark" id="save" onClick={this.savePickupEvent}>Save Pickup</Link>)
           }
         </form>
       </div>
