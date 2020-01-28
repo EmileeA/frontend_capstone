@@ -46,7 +46,7 @@ class Testimonials extends React.Component {
                   <div className="tblurb-image">
                     <span className="image-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/jessica-rockowitz-E4USFFAc_9A-unsplash.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/jessica-rockowitz-E4USFFAc_9A-unsplash.xcf"
                         alt="tblurb Img"
                         id="tblurbImgId1"
                       />
@@ -67,7 +67,7 @@ class Testimonials extends React.Component {
                   <div className="tblurb-image">
                     <span className="image-wrap">
                       <img
-                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/humphrey-muleba-Cc-CQTUkbH0-unsplash.jpg"
+                        src="https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/humphrey-muleba-Cc-CQTUkbH0-unsplash.xcf"
                         alt="tblurb Img"
                         id="tblurbImgId1"
                       />
