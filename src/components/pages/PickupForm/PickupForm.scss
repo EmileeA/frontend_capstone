@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+
 .PickupForm {
   font-family: 'Open Sans', sans-serif;
-  display: block;
-  margin-top: 10em;
+  // height: 100vh;
+  // background-image: url(https://raw.githubusercontent.com/EmileeA/frontend_capstone/master/screenshots/casey-horner-4rDCa5hBlCs-unsplash.jpg);
+  // background-size: cover;
+  // background-position: center, center;
+  h1 {
+    text-align:center;
+    display:block;
+    margin-top: 150px;
+    color: #666666;
+  }
+  .FormForm {
+    min-width: 300px;
+    max-width: 700px;
+    margin: 50px auto 20px;
+    background-color: rgba($color: #fff, $alpha: .5);
+    border-radius: 20px;
+    padding:20px;
+  }
+  input {
+    margin: 10px 0;
+  }
 }
 
-#save {
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 3em;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  margin: 0 auto;
-  left: 40%;
-  right: 40%;
-  top: 75%;
-  width: 10%;
-}
 
-.newPickuph1 {
-  text-align: center;
-  margin-block-start: 4em;
-  position: relative;
-  font-size: 43px;
-  color: #666666!important;
-}

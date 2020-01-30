@@ -1,56 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-.Testimonals {
-  display: block;
+.card {
+  border: none;
 }
 
-.testimonialsh1Id {
+h4 {
   text-align: center;
-  margin-block-start: 2em;
+}
+
+#testimonialsimg {
+  object-fit: contain;
+  height: 375px;
+}
+
+.testimonialsh1 {
+  margin-top: 50px!important;
+  margin: 0 auto;
   position: relative;
   font-size: 43px;
   color: #666666!important;
 }
 
-#trow {
-  margin-inline-start: 5%;
-  margin-inline-end: 5%;
-}
-
-.testimonialsinnerText{
-  text-align: left;
-  position: relative;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 6%;
-  margin-inline-end: 6%;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.7em;
-  margin-bottom: 2%;
-
-}
-
-.tblurb-top {
-text-align: center;
-}
-
-.tblurb-content {
-  position: relative;
-  max-width: 500px;
-  margin: 0 auto;
+.card-body {
   color: #666666!important;
 }
 
-
-.image-wrap img {
-  object-fit: contain;
-  width: 500px;
-  height: 400px;
-  margin-bottom: 30px;
-}
-
-.tblurb-description {
-  text-align: left;
-  margin-left: 4%;
-}
+.testimonialsinnerText{
+    text-align: center;
+    position: relative;
+    font-weight: 300;
+    font-size: 20px;
+    margin-block-start: 1em;
+    line-height: 1.7em;
+    margin-bottom: 2%;
+  }
