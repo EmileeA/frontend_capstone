@@ -92,54 +92,52 @@ class PickupForm extends React.Component {
     const { pickupId } = this.props.match.params;
 
     return (
-      <div className="PickupForm">
-        <form className="PickupForm">
+      <div className="PickupForm justify-content-center">
+        <h1>Schedule a New Pickup</h1>
+        <div className="FormForm">
+          <form>
           <div className="form-group">
-            <div className="newPickuph1">
-            <h1>Schedule a New Pickup</h1>
-            </div>
-            <label htmlFor="name"></label>
             <input
               type="text"
-              className="form-control col-4 m-auto"
+              className="form-control"
               id="name"
-              placeholder="Enter name"
+              placeholder="Enter Name"
               value={name}
               onChange={this.nameChange}
             ></input>
-            <label htmlFor="address"></label>
             <input
               type="text"
-              className="form-control col-4 m-auto"
+              className="form-control"
               id="address"
               placeholder="Enter Address"
               value={address}
               onChange={this.addressChange}
             ></input>
-            <label htmlFor="boxNumber"></label>
             <input
               type="text"
-              className="form-control col-4 m-auto"
+              className="form-control"
               id="boxNumber"
               placeholder="Enter Number of Boxes"
               value={boxNumber}
               onChange={this.boxNumberChange}
             ></input>
-            <label htmlFor="pickupDay"></label>
             <input
               type="text"
-              className="form-control col-4 m-auto"
+              className="form-control"
               id="pickupDay"
               placeholder="Enter Pickup Day"
               value={pickupDay}
               onChange={this.pickupDayChange}
             ></input>
           </div>
+          <center>
           {pickupId
-            ? (<Link className="btn btn-dark" id="save" onClick={this.saveChangesEvent}>Save Changes</Link>)
-            : (<Link className="btn btn-dark" id="save" onClick={this.savePickupEvent}>Save Pickup</Link>)
+            ? (<Link className="btn btn-dark" onClick={this.saveChangesEvent}>Save Changes</Link>)
+            : (<Link className="btn btn-dark" onClick={this.savePickupEvent}>Save Pickup</Link>)
           }
+          </center>
         </form>
+        </div>
       </div>
     );
   }
